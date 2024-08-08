@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Build an Extension!",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
