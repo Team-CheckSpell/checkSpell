@@ -1,10 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
   </head>
-  <body style="width: 100px">
-    <h2>Check Spell</h2>
-    <div>현재 맞춤법 검사기가 켜져있습니다.</div>
+  <body>
+    <div>
+      <h2>Check Spell</h2>
+      <span>
+        <label class="switch">
+          <input class="button" type="checkbox" checked />
+          <span class="slider"></span>
+        </label>
+      </span>
+    </div>
+    <div class="message">현재 맞춤법 검사기가 켜져있습니다.</div>
+
+    <script src="popup.js"></script>
   </body>
 </html>
