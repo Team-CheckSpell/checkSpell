@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
   const onOffButton = document.querySelector('.button');
 
   chrome.storage.sync.get('enableCheckSpell', (data) => {

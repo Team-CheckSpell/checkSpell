@@ -12,13 +12,11 @@ function debounce(func, delay) {
 document.addEventListener(
   'input',
   debounce(async function (event) {
+    // CheckSpell 활성화시켜 둔 경우에만 맞춤법 검사 수행
     chrome.storage.sync.get('enableCheckSpell', (data) => {
       const isEnabled = data.enableCheckSpell || false;
       if (isEnabled) {
-        //TODO: CheckSpell 활성화시켜 둔 경우에만 맞춤법 검사 수행
-
         const target = event.target;
-
         // input, textarea, contenteditable div인지 확인
         if (
           (target.tagName === 'INPUT' ||
